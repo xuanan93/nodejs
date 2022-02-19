@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 const port = 3000
-const host = "192.168.11.130"
+const host = "0.0.0.0"
 //app.get('/', function (req, res) {
   //  res.send('hello world')
   //})
