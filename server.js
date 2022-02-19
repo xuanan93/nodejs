@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 const port = 3000
+const host = "192.168.11.131"
 //app.get('/', function (req, res) {
   //  res.send('hello world')
   //})
@@ -69,7 +70,7 @@ const port = 3000
  
 //var router = require('./apiRouter')
 //app.use('/a/', router);
+
 module.exports = app
-app.listen(port, () => {
+app.listen(port, host);
 console.log(`Example app listening on port ${port}`)
-})
